@@ -1,18 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="text-center">
-    <h1 class="text-4xl font-bold mb-4">Testimonials</h1>
-    <p class="mb-6 text-lg text-gray-600">What my clients and colleagues say about me.</p>
-    <div class="space-y-6">
-        <div class="bg-white p-6 shadow rounded">
-            <p class="text-gray-600">"Great work on the project! Very professional and efficient."</p>
-            <span class="text-indigo-600 font-semibold">John Doe</span>
+<div class="container">
+    <h1 class="page-title">Testimonials</h1>
+    <div class="testimonial-grid">
+        @foreach($testimonials as $testimonial)
+        <div class="testimonial-card">
+            <img src="{{ $testimonial->image ?? 'https://via.placeholder.com/80' }}" class="avatar" alt="{{ $testimonial->name }}">
+            <div class="testimonial-info">
+                <h2>{{ $testimonial->name }}</h2>
+                <p class="designation">{{ $testimonial->designation ?? '' }} @ {{ $testimonial->company ?? '' }}</p>
+                <p class="testimonial-text">"{{ $testimonial->content }}"</p>
+            </div>
         </div>
-        <div class="bg-white p-6 shadow rounded">
-            <p class="text-gray-600">"A highly skilled developer who always goes the extra mile."</p>
-            <span class="text-indigo-600 font-semibold">Jane Smith</span>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection
