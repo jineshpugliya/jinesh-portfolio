@@ -2,27 +2,22 @@
 
 @section('content')
 <div class="text-center">
-    <h1 class="text-4xl font-bold mb-4">Welcome to My Portfolio</h1>
-    <p class="mb-6 text-lg text-gray-600">I'm a Software Engineer building modern web applications with Laravel and more.</p>
-    <a href="/projects" class="inline-block bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700">View Projects</a>
-</div>
-<div class="mt-12">
-    <h2 class="text-2xl font-bold mb-4">Featured Projects</h2>
+    <h1 class="text-4xl font-bold mb-4">Projects</h1>
+    <p class="mb-6 text-lg text-gray-600">Explore my latest projects where I showcase my work and contributions.</p>
     <div class="grid md:grid-cols-3 gap-6">
-        <!-- Example featured project -->
         <div class="bg-white rounded shadow p-4">
             <h3 class="text-lg font-semibold">Project One</h3>
-            <p class="text-gray-600">A brief description of the project.</p>
+            <p class="text-gray-600">Brief description of Project One.</p>
             <a href="/projects/1" class="text-indigo-600 hover:underline">Read more</a>
         </div>
         <div class="bg-white rounded shadow p-4">
             <h3 class="text-lg font-semibold">Project Two</h3>
-            <p class="text-gray-600">Another brief project description.</p>
+            <p class="text-gray-600">Brief description of Project Two.</p>
             <a href="/projects/2" class="text-indigo-600 hover:underline">Read more</a>
         </div>
         <div class="bg-white rounded shadow p-4">
             <h3 class="text-lg font-semibold">Project Three</h3>
-            <p class="text-gray-600">A third project's description.</p>
+            <p class="text-gray-600">Brief description of Project Three.</p>
             <a href="/projects/3" class="text-indigo-600 hover:underline">Read more</a>
         </div>
     </div>

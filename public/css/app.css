@@ -97,3 +97,65 @@ footer {
     box-shadow: 0 0 10px #ff00ff;
     text-align: center;
 }
+
+/* Custom styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7fafc;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .bg-indigo-600 {
+    background-color: #4c51bf;
+  }
+
+  .bg-indigo-700 {
+    background-color: #434190;
+  }
+
+  .text-indigo-600 {
+    color: #4c51bf;
+  }
+
+  .text-indigo-700 {
+    color: #434190;
+  }
+
+  .text-gray-600 {
+    color: #718096;
+  }
+
+  .text-gray-800 {
+    color: #2d3748;
+  }
+
+  .text-sm {
+    font-size: 0.875rem;
+  }
+
+  .text-lg {
+    font-size: 1.125rem;
+  }
+
+  .text-xl {
+    font-size: 1.25rem;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .text-4xl {
+    font-size: 2.25rem;
+  }
+
+  .text-2xl {
+    font-size: 1.5rem;
+  }
