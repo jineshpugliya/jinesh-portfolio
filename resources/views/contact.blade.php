@@ -1,15 +1,20 @@
 @extends('layouts.app')
-
 @section('content')
-<div class="text-center">
-    <h1 class="text-4xl font-bold mb-4">Contact Me</h1>
-    <p class="mb-6 text-lg text-gray-600">Feel free to reach out for inquiries or collaborations.</p>
-    <form action="/contact" method="POST" class="space-y-4 max-w-xl mx-auto">
-        @csrf
-        <input type="text" name="name" placeholder="Your Name" class="w-full p-4 border rounded">
-        <input type="email" name="email" placeholder="Your Email" class="w-full p-4 border rounded">
-        <textarea name="message" placeholder="Your Message" class="w-full p-4 border rounded" rows="4"></textarea>
-        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700">Send Message</button>
-    </form>
-</div>
+<h1>Contact</h1>
+<form method="POST" action="{{ route('contact.send') }}">
+    @csrf
+    <div class="mb-3">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-control" name="name" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" name="message" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>
 @endsection

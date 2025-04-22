@@ -1,19 +1,18 @@
 @extends('layouts.app')
-
 @section('content')
-<div class="container">
-    <h1 class="page-title">Testimonials</h1>
-    <div class="testimonial-grid">
-        @foreach($testimonials as $testimonial)
-        <div class="testimonial-card">
-            <img src="{{ $testimonial->image ?? 'https://via.placeholder.com/80' }}" class="avatar" alt="{{ $testimonial->name }}">
-            <div class="testimonial-info">
-                <h2>{{ $testimonial->name }}</h2>
-                <p class="designation">{{ $testimonial->designation ?? '' }} @ {{ $testimonial->company ?? '' }}</p>
-                <p class="testimonial-text">"{{ $testimonial->content }}"</p>
+<h1 class="mb-4">Testimonials</h1>
+<div class="row">
+    @foreach($testimonials as $testimonial)
+    <div class="col-md-4 mb-3">
+        <div class="card h-100">
+            <div class="card-body text-center">
+                <img src="{{ $testimonial->image ?? 'https://via.placeholder.com/80' }}" class="rounded-circle mb-3" width="80" height="80">
+                <h5>{{ $testimonial->name }}</h5>
+                <p class="text-muted">{{ $testimonial->designation }}</p>
+                <p>"{{ $testimonial->content }}"</p>
             </div>
         </div>
-        @endforeach
     </div>
+    @endforeach
 </div>
 @endsection
