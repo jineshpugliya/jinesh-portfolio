@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('content');
             $table->string('designation')->nullable();
-            $table->string('company')->nullable();
+            $table->string('comp any')->nullable();
             $table->string('image')->nullable();
             $table->timestamps();
         });
