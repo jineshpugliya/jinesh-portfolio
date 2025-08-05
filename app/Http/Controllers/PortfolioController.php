@@ -118,8 +118,9 @@ class PortfolioController extends Controller
 
     public function downloadResume()
     {
-        $pathToFile = storage_path('app/public/resume/Jinesh_Puglia_Resume.pdf');
-        
+        $pathToFile = storage_path('app/public/resume/Jinesh_DE_Resume.pdf');
+
+
         if (!file_exists($pathToFile)) {
             abort(404, 'Resume not found');
         }

@@ -37,12 +37,14 @@
 
                 <div class="flex justify-center lg:justify-end">
                     <div class="relative">
-                        <div class="w-80 h-80 rounded-full glass-effect p-8 floating-animation">
+                        <div class="w-80 h-80 rounded-full glass-effect p-1 floating-animation">
+                            {{-- <div class="w-80 h-80 rounded-full glass-effect p-8 floating-animation"> --}}
                             <div
                                 class="w-full h-full rounded-full overflow-hidden border-4 border-[var(--primary-color)] neon-glow">
-                                <img src="/placeholder.svg?height=300&width=300" alt="Jinesh Puglia"
+                                <img src="{{ asset('assets/images/jinesh_portfolio.jpg') }}" alt="Jinesh Puglia"
                                     class="w-full h-full object-cover">
                             </div>
+
                         </div>
                         <div
                             class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] rounded-full flex items-center justify-center text-white font-bold text-lg animate-pulse">
