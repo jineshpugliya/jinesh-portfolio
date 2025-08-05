@@ -1,22 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ProjectController;
-use App\Http\Controllers\BlogController;
-use App\Http\Controllers\TestimonialController;
-use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\AdminController;
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/about', [HomeController::class, 'about']);
-Route::get('/projects', [ProjectController::class, 'index']);
-Route::get('/projects/{id}', [ProjectController::class, 'show']);
-Route::get('/blog', [BlogController::class, 'index']);
-Route::get('/blog/{id}', [BlogController::class, 'show']);
-Route::get('/testimonials', [TestimonialController::class, 'index']);
-Route::get('/contact', [ContactController::class, 'showForm']);
-Route::post('/contact', [ContactController::class, 'submitForm']);
+// Main portfolio routes
+Route::get('/', [PortfolioController::class, 'index'])->name('home');
+Route::post('/contact', [PortfolioController::class, 'contact'])->name('contact.submit');
+Route::get('/download-resume', [PortfolioController::class, 'downloadResume'])->name('resume.download');
+Route::get('/blog', [PortfolioController::class, 'blog'])->name('blog');
+Route::get('/blog/{slug}', [PortfolioController::class, 'blogPost'])->name('blog.post');
 
+// Admin routes
+Route::prefix('admin')->middleware('auth')->group(function () {
+    Route::get('/', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    Route::resource('projects', AdminController::class);
+    Route::resource('articles', AdminController::class);
+});
 
-Route::get('/testimonials', [TestimonialController::class, 'index']);
-Route::get('/testimonials/{id}', [TestimonialController::class, 'show']);
+// Theme toggle
+Route::post('/toggle-theme', [PortfolioController::class, 'toggleTheme'])->name('theme.toggle');

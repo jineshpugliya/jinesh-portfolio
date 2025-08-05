@@ -6,9 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up()
     {
         Schema::create('projects', function (Blueprint $table) {
@@ -16,6 +13,11 @@ return new class extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('image')->nullable();
+            $table->json('technologies');
+            $table->string('github_url')->nullable();
+            $table->string('live_url')->nullable();
+            $table->boolean('featured')->default(false);
+            $table->integer('order')->default(0);
             $table->timestamps();
         });
     }
