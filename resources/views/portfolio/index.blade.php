@@ -13,7 +13,7 @@
                             <span class="text-white">Puglia</span>
                         </h1>
                         <div class="text-xl lg:text-2xl text-gray-300 mb-6 typing-animation font-jetbrains">
-                            Certified Data Engineer | Full-Stack Developer
+                            Data Engineer | Full-Stack Developer
                         </div>
                         <p class="text-lg text-gray-400 mb-8 max-w-2xl">
                             Passionate about transforming data into insights and building scalable web applications.
@@ -48,7 +48,7 @@
                         </div>
                         <div
                             class="absolute -top-4 -right-4 w-20 h-20 bg-gradient-to-r from-[var(--primary-color)] to-[var(--secondary-color)] rounded-full flex items-center justify-center text-white font-bold text-lg animate-pulse">
-                            3+
+                            4+
                             <span class="text-xs ml-1">YRS</span>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                     <div class="glass-effect rounded-2xl p-8">
                         <h3 class="text-2xl font-bold text-[var(--primary-color)] mb-6">My Story</h3>
                         <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                            I'm Jinesh Puglia, a passionate data engineer and software developer with 3+ years of experience
+                            I'm Jinesh Puglia, a passionate data engineer and software developer with 4+ years of experience
                             in full-stack development, cloud computing, big data, and more. I love building impactful
                             digital
                             solutions and constantly learn new technologies.
@@ -85,7 +85,7 @@
 
                         <div class="grid grid-cols-2 gap-6 mt-8">
                             <div class="text-center">
-                                <div class="text-3xl font-bold text-[var(--primary-color)]">3+</div>
+                                <div class="text-3xl font-bold text-[var(--primary-color)]">4+</div>
                                 <div class="text-gray-400">Years Experience</div>
                             </div>
                             <div class="text-center">

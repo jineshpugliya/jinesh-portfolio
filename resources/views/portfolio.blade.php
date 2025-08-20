@@ -58,7 +58,7 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        Hi there! I'm Jinesh Puglia, a passionate Data Engineer and Full Stack Developer with over 3+ years
+                        Hi there! I'm Jinesh Puglia, a passionate Data Engineer and Full Stack Developer with over 4+ years
                         of experience
                         in building scalable web applications and data processing systems. My expertise spans across
                         multiple technologies
@@ -73,7 +73,7 @@
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number">3+</span>
+                            <span class="stat-number">4+</span>
                             <span class="stat-label">Years Experience</span>
                         </div>
                         <div class="stat-item">
