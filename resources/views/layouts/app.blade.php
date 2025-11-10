@@ -2,32 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom Styles -->
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
-        .navbar { background-color: #2c3e50; }
-        .navbar-brand, .nav-link { color: #fff !important; font-weight: 500; }
-        .hero { background: linear-gradient(to right, #6a11cb, #2575fc); color: white; padding: 80px 0; text-align: center; }
-        .hero h1 { font-size: 3rem; font-weight: 700; }
-        .hero p { font-size: 1.25rem; }
-        .section { padding: 60px 0; }
-        .section-title { font-size: 2.5rem; font-weight: 700; text-align: center; margin-bottom: 40px; }
-        .card { box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); border: none; }
-        footer { background-color: #2c3e50; color: white; padding: 30px 0; text-align: center; margin-top: 60px; }
-        .btn-primary { background-color: #2575fc; border-color: #2575fc; }
-        .btn-primary:hover { background-color: #1a5be1; border-color: #1a5be1; }
-    </style>
+    <title>Jinesh Puglia - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    @yield('content')
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-white shadow p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Jinesh Puglia</h1>
+            <nav>
+                <a href="/" class="mx-2">Home</a>
+                <a href="/about" class="mx-2">About</a>
+                <a href="/experience" class="mx-2">Experience</a>
+                <a href="/skills" class="mx-2">Skills</a>
+                <a href="/contact" class="mx-2">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="p-6">
+        @yield('content')
+    </main>
 </body>
 </html>
