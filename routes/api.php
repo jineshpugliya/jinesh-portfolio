@@ -20,3 +20,6 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/ai/wellness/analyze', [AiWellnessController::class, 'analyze']);
+// Route::post('/ai/analyze', [AiWellnessController::class, 'analyze']);
+// Route::post('/api/ai/analyze', [AiWellnessController::class, 'analyze']);
+// Route::post('/ai/wellness/analyze', [AiWellnessController::class, 'analyze']);
