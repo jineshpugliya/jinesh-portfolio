@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\AdminController;
+use Illuminate\Support\Facades\Artisan;
 
 // Main portfolio routes
 Route::get('/', [PortfolioController::class, 'index'])->name('home');
@@ -20,3 +21,10 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 
 // Theme toggle
 Route::post('/toggle-theme', [PortfolioController::class, 'toggleTheme'])->name('theme.toggle');
+
+
+
+Route::get('/__clear-cache', function () {
+    Artisan::call('optimize:clear');
+    return 'Cache cleared';
+});
